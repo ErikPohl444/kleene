@@ -17,16 +17,16 @@ class kleene():
 if __name__ == '__main__':
     k = kleene()
     z = [1, 2, 3, 4, 5]
-    patternstr = k.strict_list_of_values(z)
-    print('pattern ' + patternstr)
+    pattern_str = k.strict_list_of_values(z)
+    print('pattern ' + pattern_str)
     import re
-    f = re.search(patternstr, '3')
+    f = re.search(pattern_str, '3')
     print(f)
     z = ['Hello', 'Goodbye', 'Aloha']
-    patternstr = k.strict_list_of_values(z)
-    print('pattern ' + patternstr)
+    pattern_str = k.strict_list_of_values(z)
+    print('pattern ' + pattern_str)
     import re
-    f = re.search(patternstr, '3')
+    f = re.search(pattern_str, '3')
     print(f)
         
         
