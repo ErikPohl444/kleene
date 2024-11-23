@@ -8,7 +8,7 @@ class testKleene(TestCase):
     def test_lov_xor(self):
         lov = ['Hello', 'Goodbye', 'Aloha']
         clean = kleene()
-        regex_pattern_string = clean.list_of_values(lov)
+        regex_pattern_string = clean.strict_list_of_values(lov)
         print(regex_pattern_string)
         xor_satisfied = bool(re.match(regex_pattern_string, 'Hello'))
         xor_unsatisfied = bool(re.match(regex_pattern_string, 'HelloGoodbye'))
@@ -20,7 +20,7 @@ class testKleene(TestCase):
         self.assertEqual(xor_too_much, False, msg='xor not found')
         lov = [1, 2, 3]
         clean = kleene()
-        regex_pattern_string = clean.list_of_values(lov)
+        regex_pattern_string = clean.strict_list_of_values(lov)
         print(regex_pattern_string)
         xor_satisfied = bool(re.match(regex_pattern_string, '1'))
         xor_unsatisfied = bool(re.match(regex_pattern_string, '12'))
