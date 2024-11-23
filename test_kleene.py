@@ -18,7 +18,7 @@ class testKleene(TestCase):
         self.assertEqual(xor_satisfied, True, msg='xor satisfied')
         self.assertEqual(xor_unsatisfied, False, msg='xor unsatisfied')
         self.assertEqual(xor_too_much, False, msg='xor too much')
-        self.assertEqual(xor_too_much, False, msg='xor not found')
+        self.assertEqual(xor_not_found, False, msg='xor not found')
 
     def test_lov_xor_numbers(self):
         print("initiating test lov xor numbers")
@@ -33,7 +33,7 @@ class testKleene(TestCase):
         self.assertEqual(xor_satisfied, True, msg='xor satisfied')
         self.assertEqual(xor_unsatisfied, False, msg='xor unsatisfied')
         self.assertEqual(xor_too_much, False, msg='xor too much')
-        self.assertEqual(xor_too_much, False, msg='xor not found')
+        self.assertEqual(xor_not_found, False, msg='xor not found')
 
 
         
