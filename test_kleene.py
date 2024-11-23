@@ -9,7 +9,7 @@ class testKleene(TestCase):
         lov = ['Hello', 'Goodbye', 'Aloha']
         clean = kleene()
         regex_pattern_string = clean.strict_list_of_values(lov)
-        print(regex_pattern_string)
+        print(f"For lov [{lov}], the following regex pattern string was constructed by Kleene [{regex_pattern_string}]")
         xor_satisfied = bool(re.match(regex_pattern_string, 'Hello'))
         xor_unsatisfied = bool(re.match(regex_pattern_string, 'HelloGoodbye'))
         xor_too_much = bool(re.match(regex_pattern_string, 'AlohaAloah'))
@@ -21,7 +21,7 @@ class testKleene(TestCase):
         lov = [1, 2, 3]
         clean = kleene()
         regex_pattern_string = clean.strict_list_of_values(lov)
-        print(regex_pattern_string)
+        print(f"For lov [{lov}], the following regex pattern string was constructed by Kleene [{regex_pattern_string}]")
         xor_satisfied = bool(re.match(regex_pattern_string, '1'))
         xor_unsatisfied = bool(re.match(regex_pattern_string, '12'))
         xor_too_much = bool(re.match(regex_pattern_string, '1one'))
