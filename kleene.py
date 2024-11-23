@@ -9,7 +9,7 @@ class kleene():
     def __init__(self):
         pass
     
-    def strict_list_of_values(self, list):
+    def list_to_xor_regex(self, list):
         '''
         returns regex expression for list of values
         '''
@@ -19,12 +19,12 @@ class kleene():
 if __name__ == '__main__':
     k = kleene()
     z = [1, 2, 3, 4, 5]
-    pattern_str = k.strict_list_of_values(z)
+    pattern_str = k.list_to_xor_regex(z)
     print(f'pattern {pattern_str}')
     f = re.search(pattern_str, '3')
     print(f)
     z = ['Hello', 'Goodbye', 'Aloha']
-    pattern_str = k.strict_list_of_values(z)
+    pattern_str = k.list_to_xor_regex(z)
     print(f'pattern {pattern_str}')
     import re
     f = re.search(pattern_str, '3')
