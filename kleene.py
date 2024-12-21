@@ -1,18 +1,18 @@
 import re
 
 
-class kleene():
-    '''
+class kleene:
+    """
     common regex usage translation
-    '''
+    """
     
     def __init__(self):
         pass
     
     def list_to_xor_regex(self, list):
-        '''
+        """
         returns regex expression for list of values
-        '''
+        """
         return '^(' + ''.join(['\\b'+str(y)+'|' for x, y in enumerate(list) if x != len(list)]) + ')'+'{1}'+'$'
 
 
