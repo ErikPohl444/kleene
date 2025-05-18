@@ -18,17 +18,29 @@ This was just some nerdy fun years ago.  The intent was to build a library of tr
 I have more interesting work!  See my Hello, World root readme.
 
 
-## Getting Started
+### Getting Started
 
-Download and use.
+Clone this repository and use the `kleene` class to generate regular expressions from lists of strings or numbers. You can run the provided examples in `kleene.py` or use the class in your own Python scripts. To verify everything works, you can also run the included tests.
 
-## Prerequisites
+### Prerequisites
 
-I'll provide prereqs here.
+- Python 3.6 or higher
+- No additional libraries are required (only standard library modules like `re` and `unittest` are used)
 
-## Installing
+### Installing
 
-I will provide installation steps here.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ErikPohl444/kleene.git
+   cd kleene
+   ```
+2. (Optional) Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+3. No further installation steps are necessary; you can use the code directly.
+
 
 ## Running the tests
 
